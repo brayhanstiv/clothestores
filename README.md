@@ -47,15 +47,9 @@ flutter pub run build_runner build
 En caso de ejecutar pruebas puede realizarlo con el comando:
 
 ```
-flutter test
+flutter test urlArchivo
 ```
 
-O en caso de querer ejecutar pruebas para un solo archivo puede hacerlo con el comando:
-
-
-```
-flutter test test/widget_test.dart
-```
 ## ClothesStore Características:
 
 * Rutas

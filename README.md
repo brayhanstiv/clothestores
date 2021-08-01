@@ -13,7 +13,7 @@ ClothesStores es una plataforma básica que consume la api de mercado libre para
 ![alt text](https://github.com/brayhanstiv/clothestores/blob/master/assets/img/view_3.jpeg)
 ![alt text](https://github.com/brayhanstiv/clothestores/blob/master/assets/img/view_4.jpeg)
 
-## How to Use
+## Como usarlo
 
 **Step 1:**
 

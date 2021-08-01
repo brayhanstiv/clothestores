@@ -8,7 +8,7 @@ A boilerplate project created in flutter using MobX and Provider. Boilerplate su
 
 ClothesStores es una plataforma básica que consume la api de marcado libre para plasmar sus productos, contiene vistas importantes como el home donde se plasman todos los productos relacionados con ropa y accesorios, product detail para visuallizar detalles de cada producto y una vista de búsqueda sencilla para para éstos mismos productos
 
-https://github.com/brayhanstiv/clothestores/blob/master/assets/img/feature_1.png
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png?raw=true "Home")
 
 ## How to Use
 

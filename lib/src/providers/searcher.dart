@@ -37,6 +37,7 @@ class SearcherProvider extends ChangeNotifier {
     try {
       final res = await http.get(url);
       final itemsResponse = itemFromJson(res.body);
+      this.items.clear();
       this.items.addAll(itemsResponse.results);
       Navigator.pushNamed(context, '/found');
       notifyListeners();

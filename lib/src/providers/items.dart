@@ -27,6 +27,7 @@ class ItemsProvider extends ChangeNotifier {
     try {
       final res = await http.get(url);
       final itemsResponse = itemFromJson(res.body);
+      this.items.clear();
       this.items.addAll(itemsResponse.results);
       notifyListeners();
     } catch (error) {

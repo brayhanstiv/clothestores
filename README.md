@@ -15,7 +15,7 @@ ClothesStores es una plataforma básica que consume la api de mercado libre para
 
 ## Como usarlo
 
-**Step 1:**
+**Paso 1:**
 
 Descargar o clonar este respositorio usando este link:
 
@@ -23,7 +23,7 @@ Descargar o clonar este respositorio usando este link:
 https://github.com/brayhanstiv/clothestores.git
 ```
 
-**Step 2:**
+**Paso 2:**
 
 Vaya a la raíz del proyecto y ejecute el siguiente comando en la consola para obtener las dependencias necesarias:
 
@@ -34,7 +34,7 @@ flutter clean
 flutter pub get
 ```
 
-**Step 3:**
+**Paso 3:**
 
 Ejecutar el comando para mantener el código fuente sincronizado automáticamente:
 
@@ -42,7 +42,7 @@ Ejecutar el comando para mantener el código fuente sincronizado automáticament
 flutter pub run build_runner build
 ```
 
-**Step 4:**
+**Paso 4:**
 
 En caso de ejecutar pruebas puede realizarlo con el comando:
 

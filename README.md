@@ -2,104 +2,55 @@
 
 A boilerplate project created in flutter using MobX and Provider. Boilerplate supports both web and mobile, clone the appropriate branches mentioned below:
 
-* For Mobile: https://github.com/zubairehman/flutter-boilerplate-project/tree/master (stable channel)
-* For Web: https://github.com/zubairehman/flutter-boilerplate-project/tree/feature/web-support (beta channel)
+* Para Móvil: https://github.com/brayhanstiv/clothestores/tree/master (canal estable)
 
 ## Getting Started
 
-The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can have same patterns in all the projects that will inherit it. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
+ClothesStores es una plataforma básica que consume la api de marcado libre para plasmar sus productos, contiene vistas importantes como el home donde se plasman todos los productos relacionados con ropa y accesorios, product detail para visuallizar detalles de cada producto y una vista de búsqueda sencilla para para éstos mismos productos
 
-## How to Use 
+https://github.com/brayhanstiv/clothestores/blob/master/assets/img/feature_1.png
+
+## How to Use
 
 **Step 1:**
 
-Download or clone this repo by using the link below:
+Descargar o clonar este respositorio usando este link:
 
 ```
-https://github.com/zubairehman/flutter-boilerplate-project.git
+https://github.com/brayhanstiv/clothestores.git
 ```
 
 **Step 2:**
 
-Go to project root and execute the following command in console to get the required dependencies: 
+Vaya a la raíz del proyecto y ejecute el siguiente comando en la consola para obtener las dependencias necesarias:
 
 ```
-flutter pub get 
+flutter clean
+```
+```
+flutter pub get
 ```
 
 **Step 3:**
 
-This project uses `inject` library that works with code generation, execute the following command to generate files:
+Ejecutar el comando para mantener el código fuente sincronizado automáticamente:
 
 ```
-flutter packages pub run build_runner build --delete-conflicting-outputs
+flutter pub run build_runner build
 ```
 
-or watch command in order to keep the source code synced automatically:
+## ClothesStore Características:
 
-```
-flutter packages pub run build_runner watch
-```
-
-## Hide Generated Files
-
-In-order to hide generated files, navigate to `Android Studio` -> `Preferences` -> `Editor` -> `File Types` and paste the below lines under `ignore files and folders` section:
-
-```
-*.inject.summary;*.inject.dart;*.g.dart;
-```
-
-In Visual Studio Code, navigate to `Preferences` -> `Settings` and search for `Files:Exclude`. Add the following patterns:
-```
-**/*.inject.summary
-**/*.inject.dart
-**/*.g.dart
-```
-
-## Boilerplate Features:
-
-* Splash
-* Login
-* Home
-* Routing
-* Theme
-* Dio
-* Database
-* MobX (to connect the reactive data of your application with the UI)
+* Rutas
+* Http (para el consumo de APIs)
 * Provider (State Management)
-* Encryption
-* Validation
-* Code Generation
-* User Notifications
-* Logging
-* Dependency Injection
-* Dark Theme Support (new)
-* Multilingual Support (new)
-* Provider example (new)
-
-### Up-Coming Features:
-
-* Connectivity Support
-* Background Fetch Support
-
-### Libraries & Tools Used
-
-* [Dio](https://github.com/flutterchina/dio)
-* [Database](https://github.com/tekartik/sembast.dart)
-* [MobX](https://github.com/mobxjs/mobx.dart) (to connect the reactive data of your application with the UI)
-* [Provider](https://github.com/rrousselGit/provider) (State Management)
-* [Encryption](https://github.com/xxtea/xxtea-dart)
-* [Validation](https://github.com/dart-league/validators)
-* [Logging](https://github.com/zubairehman/Flogs)
-* [Notifications](https://github.com/AndreHaueisen/flushbar)
-* [Json Serialization](https://github.com/dart-lang/json_serializable)
-* [Dependency Injection](https://github.com/fluttercommunity/get_it)
+* Intl
 
 ### Folder Structure
-Here is the core folder structure which flutter provides.
+Aquí está la estructura de carpetas que nos proporciona flutter.
 
 ```
-flutter-app/
+clothesstore/
 |- android
 |- build
 |- ios
@@ -107,31 +58,19 @@ flutter-app/
 |- test
 ```
 
-Here is the folder structure we have been using in this project
+Aquí está la estructura de carpetas que hemos estado usando en este proyecto.
 
 ```
 lib/
-|- constants/
-|- data/
-|- stores/
-|- ui/
-|- utils/
+|- containers/
+|- models/
+|- providers/
+|- screens/
+|- theme/
 |- widgets/
+|- constants.dart
 |- main.dart
 |- routes.dart
-```
-
-Now, lets dive into the lib folder which has the main code for the application.
-
-```
-1- constants - All the application level constants are defined in this directory with-in their respective files. This directory contains the constants for `theme`, `dimentions`, `api endpoints`, `preferences` and `strings`.
-2- data - Contains the data layer of your project, includes directories for local, network and shared pref/cache.
-3- stores - Contains store(s) for state-management of your application, to connect the reactive data of your application with the UI. 
-4- ui — Contains all the ui of your project, contains sub directory for each screen.
-5- util — Contains the utilities/common functions of your application.
-6- widgets — Contains the common widgets for your applications. For example, Button, TextField etc.
-7- routes.dart — This file contains all the routes for your application.
-8- main.dart - This is the starting point of the application. All the application level configurations are defined in this file i.e, theme, routes, title, orientation etc.
 ```
 
 ### Constants
@@ -139,7 +78,7 @@ Now, lets dive into the lib folder which has the main code for the application.
 This directory contains all the application level constants. A separate file is created for each type as shown in example below:
 
 ```
-constants/
+containers/
 |- app_theme.dart
 |- dimens.dart
 |- endpoints.dart

@@ -21,7 +21,7 @@ class SearchScreen extends StatelessWidget {
       child: ListView(
         children: [
           Container(
-            height: size.height * 0.15,
+            height: size.height * 0.2,
             color: Consts.kTextColor.withOpacity(0.2),
             padding: EdgeInsets.all(20.0),
             child: Column(
